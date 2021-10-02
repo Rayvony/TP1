@@ -1,0 +1,318 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Parte del header compuesta en grid, compuesta por logo, buscador y menu */
+header{
+  width: 100%;
+  background-color: #303030;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(2, auto);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+.nav-header{
+  text-align: center;
+  background-color: #0d0d0d;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  width: 100%;
+}
+.logo{
+  font-size: 2.3vh;
+  height: 9vh;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  transform: scale(0.5,0.5);
+  
+}
+.contenedor-header {
+  height: 5vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px auto;
+  text-align: center;
+}
+.buscador{
+  height: 2em;
+  width: 40vw;
+  margin-top: 20px;
+  border-radius: 4px;
+  padding: 15px;
+  width: 100%;
+}
+.buscador:hover{
+  cursor: pointer;
+}
+input{
+  margin-left: 20%;
+}
+.carrito{
+  padding-top: 5em;
+  font-size: 0.3em;
+  float: right;
+  padding-left: 5%;
+  width: 100%;
+}
+.nav-enlace{
+  display: inline-block;
+  margin: 0px;
+  padding: 8px;
+  color: white;
+  text-decoration: none;
+}
+.nav-enlace:hover{
+  color: #3ea6ff;
+}
+nav{
+  background-color: #0d0d0d;
+}
+/*main de las paginas*/
+main {
+  background-color: #181818;
+  height: 80vh;
+  min-height:1px;
+  min-width:1px;
+  width: 100%;
+  overflow: auto;
+  padding-bottom: 14px;
+}
+h1{
+  text-align: center;
+  color: white;
+}
+h2{
+  text-align: center;
+  padding-top: 5em;
+  color: white;
+  font-family: "Roboto Slab", serif;
+  font-weight: normal;
+}
+p{
+  color: white;
+}
+.fas{
+  font-size: 5em;
+  color: white;
+}
+.fas:hover{
+  color: #3ea6ff;
+}
+.fa-search{
+font-size: 1.4em;
+ margin-top: 23px;
+ position: relative;
+ right: 35px;
+ color: #303030;
+}
+/*Contacto*/
+.tit_contacto{
+  text-align: left;
+  margin-left: 5em;
+  padding-top: 1em;
+}
+.inputs_contacto{
+  margin-top: 1em;
+}
+.text_area{
+  height: 8vh;
+  margin-left: 10em;
+  width: 50%;
+  border-radius: 3px;
+  padding-left: 3px;
+  padding: 1px 0px 0px 3px;
+}
+.input_form{
+  height: 3em;
+  border-radius: 4px;
+  padding: 1px 0px 0px 3px;
+}
+.enviar_contacto{
+  float: right;
+  margin-top: 1em;
+  margin-right: 11em;
+  height: 2em;
+  border: none;
+  border-radius: 3px;
+  width: 100px;
+  font-size: 1em;
+  background-color: #3ea6ff;
+}
+.enviar_contacto:hover{
+background-color: #3280c2;
+cursor: pointer;
+}
+.datos_contacto{
+  height: 35vh;
+  width: 70%;
+  padding: 1px 0px 0px 3px;
+}
+iframe{
+  height: 300px;
+  width: 100%;
+}
+/*Detalles del curso*/
+.cursoss{
+  font-family: Arial, Helvetica, sans-serif;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, auto);
+  gap: 1em;
+}
+.imagenDelCurso{
+  text-align: center;
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  padding: 2em 0em 0em 0em;
+}
+.detallesDelCurso{
+  padding-top: 2em;
+  color: thistle;
+  text-align:left;
+  font-size: 12px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.docenteDelCurso{
+  background-color: #303030;
+  grid-column-start: 1;
+  grid-column-end: -1;
+  margin-inline-start: 1em;
+  margin-inline-end: 1em;
+}
+.foto1{
+  display: grid;
+  grid-template-columns: 12% 88%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  padding: 0em 0em 0em 0em;
+}
+.primerainfo{
+  padding-left: 4em;
+}
+.recomendacionesDelCurso{
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  background-color: #303030;
+  border: #181818;
+  margin-inline-start: 1em;
+  margin-inline-end: 1em;
+  margin-bottom: 1em;
+  padding: 1em 0em 0em 0em;
+  width: 20em;
+  height: 12em;
+}
+.secciones{
+  color: black;
+  margin-right: 40em;
+  border: solid #303030 1px;
+  border-radius: 6px;
+  padding: 3px;
+  background-color: #303030;
+}
+.botoncompra{
+  padding: 0.4em 0em 0em 9em;
+}
+ol{
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  grid-auto-rows: 36px;
+}
+.secdetcurs{
+  margin-left: 40em;
+}
+/*Calendario*/
+.contenedor-calendario{
+  display: flex;        
+}
+.contenedor-calendario img{
+ width: auto;
+ margin: auto;
+ border-radius: 30px;
+ box-shadow: 0 20px 20px black;
+}
+/*Establecimientos*/
+.contenedor-establecimiento1{
+display:flex;
+padding: 20px;
+}
+.contenedor-establecimiento1 img{
+ width: auto;
+ margin: auto;
+ border-radius: 30px;
+ box-shadow: 0 20px 20px black;
+}
+.contenedor-establecimiento2{
+ display: flex;
+ padding-top: 30px;
+ padding-bottom: 30px;
+ padding-left: 300px;
+ padding-right: 50px;
+}
+.contenedor-establecimiento2 img{   
+ margin: auto;
+ width: 300px;
+ height: 300px;
+ border-radius: 30px;
+ box-shadow: 0 20px 20px black;
+margin-bottom: 30px;
+}
+/*footer*/
+footer {
+  background-color: #0d0d0d;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  padding-top:14px;
+  width: 100%;
+  position: relative;
+  clear: both;
+}
+.redes{
+  color: white;
+  font-size: 4vh;
+  padding-left: 15px;
+  padding-right: 5px;
+}
+.redes:hover{
+  color: #3ea6ff;
+}
+.col-12 {
+  width: 100%;
+}
+.col-9 {
+  width: 75%;
+  float: left;
+}
+.col-8 {
+  width: 66.66666666%;
+  float: left;
+}
+.col-6 {
+  width: 50%;
+  float: left;
+}
+.col-4 {
+  width: 33.33333333%;
+  float: left;
+}
+.col-3 {
+  width: 25%;
+  float: left;
+}
+.col-2 {
+  width: 16.66666666%;
+  float: left;
+}
