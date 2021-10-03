@@ -91,7 +91,6 @@ h1{
 }
 h2{
  text-align: center;
- padding-top: 5em;
  color: white;
  font-family: "Roboto Slab", serif;
  font-weight: normal;
@@ -273,14 +272,20 @@ ol{
 }
 /*Establecimientos*/
 .contenedor-establecimiento1{
- display:flex;
+ display: flex;
  padding: 20px;
 }
 .contenedor-establecimiento1 img{
  width: auto;
  margin: auto;
- border-radius: 30px;
+ border-radius: 3px;
  box-shadow: 0 20px 20px black;
+}
+.textoimagen1{
+ margin-right: 30%;
+ font-size: 50px;
+ margin-top: 20px;
+ border-radius: 30px;   
 }
 .contenedor-establecimiento2{
  display: flex;
@@ -296,6 +301,11 @@ ol{
  border-radius: 30px;
  box-shadow: 0 20px 20px black;
 margin-bottom: 30px;
+}
+.textoimagen2{
+ margin: auto;
+ font-size: 30px;
+ padding-right: 100px;
 }
 /*footer*/
 footer {
