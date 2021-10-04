@@ -239,6 +239,12 @@ ol{
  margin-left: 40em;
 }
 /*Calendario*/
+.form{
+  color: #3280c2;
+ text-align: right;
+ margin-top: 10px;
+ margin-right: 10px;
+}
 .contenedor-calendario{
  display: flex;
  margin: auto;
