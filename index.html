@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-      <header>
+    <header>
       <div class="logo_buscador_menu col-12">
         <div class="logo col-2">
           <a href="index.html" class="nav-enlace"><i class="fas fa-dragon"></i></a>
@@ -40,14 +40,13 @@
             <option value="Curso 14"></option>
           </datalist>
         </div>
-        <div class="carrito col-2">
-          <i class="fas fa-shopping-cart"></i>
+        <div class="elipsis col-2">
+          <i class="fas fa-ellipsis-h"></i>
         </div>
       </div>
       <div class="nav-header">
         <nav>
           <a href="index.html" class="nav-enlace">Inicio</a>
-          <a href="curso.html" class="nav-enlace">Detalle del Curso</a>
           <a href="calendario.html" class="nav-enlace">Calendario</a>
           <a href="establecimientos.html" class="nav-enlace">Establecimientos</a>
           <a href="inscripcion.html" class="nav-enlace">Inscripción</a>
@@ -65,7 +64,7 @@
         <h1 class="titulo">INSTITUTO DE IDIOMAS</h1>
         
         <article class="inscripcion">
-          <div class="pasos-incripcion"><img  src="img/ubicacion.png" alt=""><button class="boton">busca tu establecimiento</button></div>
+          <div class="pasos-incripcion"><img  src="img/ubicacion.png" alt=""><a href="establecimientos.html"><button class="boton">busca tu establecimiento</button></a></div>
           
           <div class="pasos-incripcion"><img  src="img/curso.png" alt=""><a href="#buscarCurso"><button class="boton">selecciona tu curso</button></a></div>
           
@@ -80,32 +79,36 @@
         <div class="contenedor-fotos">
           <div class="fotos">
             <img class="fotos-img" src="img/laferrere.jpg" alt="">
+            <h2 class="sede">laferrere</h2>
           </div>
           <div class="fotos">
             <img class="fotos-img" src="img/catan.jpg" alt="">
+            <h2 class="sede">catan</h2>
           </div>
           <div class="fotos">
             <img class="fotos-img" src="img/sanjusto.jpg" alt="">
+            <h2 class="sede">san justo</h2>
           </div>
           <div class="fotos">
             <img class="fotos-img" src="img/merlo.jpg" alt="">
+            <h2 class="sede">merlo</h2>
           </div>
         </div>
         <div class="mapas"> 
           <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44103.804852430156!2d-58.64063867237669!3d-34.75471346199182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc5baec182397%3A0xb8b91257f31f246d!2sInstituto%20De%20Ingl%C3%A9s%20LANCASTER!5e0!3m2!1ses-419!2sar!4v1632666765693!5m2!1ses-419!2sar" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-          <h2 class="sede">laferrere</h2>
+          
         </div>
         <div class="mapas">
           <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52433.87382761458!2d-58.65747428504955!3d-34.777826899999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc571b4efd593%3A0xcb19ec9dc3d791ad!2sInstituto%20de%20ingl%C3%A9s%20World!5e0!3m2!1ses-419!2sar!4v1632667753700!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-          <h2 class="sede">catan</h2>
+          
         </div>
         <div class="mapas">        
           <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52496.05481793844!2d-58.594362920898455!3d-34.67986299999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc6260d0a4115%3A0xc5c17101655451b1!2sDream%20English%20Institute%20-%20Instituto%20de%20Ingl%C3%A9s!5e0!3m2!1ses-419!2sar!4v1632667796049!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-          <h2 class="sede">san justo</h2>
+          
         </div>
         <div class="mapas">
           <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52490.82576531818!2d-58.76857922089847!3d-34.688110499999986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc18a92c2ca43%3A0x98264f6cc222c204!2sInstituto%20de%20Idiomas%20Oklahoma!5e0!3m2!1ses-419!2sar!4v1632667849231!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-          <h2 class="sede">merlo</h2>
+          
         </div>
       </section>
       <h1>BUSCA EL CURSO E INSCRIBITE</h1>
@@ -150,55 +153,55 @@
           </div>
         
           <div>
-            <label for="establecimiento">establecimiento</label>
+            <label for="establecimiento">Establecimiento</label>
             <input type="text" id="establecimiento" />
           </div>
           <div>
-            <label for="direccion">direccion</label>
+            <label for="direccion">Direccion</label>
             <input type="text" name="" id="direccion" />
           </div>
           <div>
-            <label for="localidad">localidad</label>
+            <label for="localidad">Localidad</label>
             <input type="text" name="" id="localidad" />
           </div>
           <div>
-            <label for="provincia">provincia</label>
+            <label for="provincia">Provincia</label>
             <input type="text" name="" id="provincia" />
           </div>
         </div>
         <div>
           <div>
-            <label for="email">email</label>
+            <label for="email">e-Mail</label>
             <input type="email" name="" id="email" />
           </div>
           <div>
-            <label for="estable">establecimiento</label>
+            <label for="estable">Establecimiento</label>
             <select name="establecimiento" id="estable">             
-              <option value="1">laferrere</option>
-              <option value="2">catan</option>
-              <option value="3">san justo</option>
-              <option value="4">merlo</option>
+              <option value="1">Laferrere</option>
+              <option value="2">Catan</option>
+              <option value="3">San Justo</option>
+              <option value="4">Merlo</option>
             </select>
           </div>
           <div>
-            <label for="idioma">idioma</label>
+            <label for="idioma">Idioma</label>
             <select name="" id="idioma">
-              <option value="">español</option>
-              <option value="">ingles</option>
-              <option value="">portugal</option>
+              <option value="">Español</option>
+              <option value="">Ingles</option>
+              <option value="">Portugal</option>
             </select>
           </div>
           <div>
-            <label for="horarios">horarios y modalidad</label>
+            <label for="horarios">Horarios y Modalidad</label>
             <select name="horarios" id="horarios">
-              <option value="">lunes 8hs - online</option>
-              <option value="">martes 11hs - precencial</option>
-              <option value="">miercoles 15hs - online</option>
-              <option value="">viernes 12hs - precencial</option>
+              <option value="">Lunes 8hs - Online</option>
+              <option value="">Martes 11hs - Precencial</option>
+              <option value="">Miercoles 15hs - Online</option>
+              <option value="">Viernes 12hs - Precencial</option>
             </select>
           </div>
           <class class="precio_y_boton">  
-            <label for="precio">precio
+            <label for="precio">Precio
             <input type="text" name="" id="precio"/></label>
             <input id="boton" type="submit" value="INSCRIBETE" />
           </class>
@@ -207,16 +210,15 @@
         <a name="buscarCurso"></a>
       </section>
     </main>
-    <footer>
+<footer>
       <div>
-        <p>XXXXXXXXXXXXXXXXXXXXXXXXX</p>
-        <p>XXXXXXXXXXXXXXXXXXXXXXXXX</p>
+        <p>Prosman, Nazareno 39.108.477</p>
+        <p>Sanchez, Marcos 41.913.440</p>
         <p>Vargas, Mariano 42.280.686</p>
       </div>
       <div>
         <nav>
           <a href="index.html" class="nav-enlace">Inicio</a>
-          <a href="curso.html" class="nav-enlace">Detalle del Curso</a>
           <a href="calendario.html" class="nav-enlace">Calendario</a>
           <a href="establecimientos.html" class="nav-enlace">Establecimientos</a>
           <a href="inscripcion.html" class="nav-enlace">Inscripción</a>
