@@ -135,7 +135,7 @@ button:hover{
  height: 8vh;
  margin-left: 10em;
  width: 50%;
- margin-left: 20%;
+	margin-left: 20%;
  border-radius: 3px;
  padding-left: 3px;
  padding: 1px 0px 0px 3px;
@@ -191,6 +191,12 @@ iframe{
  border-radius: 3px;
  color: white;
  width: 100px;
+}
+.filtrar-por{
+  color: #3280c2;
+  text-align: right;
+  margin-top: 10px;
+  margin-right: 10px;
 }
 /*Establecimientos*/
 .contenedor-establecimiento1{
