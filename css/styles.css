@@ -193,10 +193,10 @@ iframe{
  width: 100px;
 }
 .filtrar-por{
-  color: #3280c2;
-  text-align: right;
-  margin-top: 10px;
-  margin-right: 10px;
+  color: white;
+  text-align: left;
+  margin-top: 12px;
+  margin-left: 15px;
 }
 /*Establecimientos*/
 .contenedor-establecimiento1{
