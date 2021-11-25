@@ -11,7 +11,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css" />
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/javascript-calendario-establecimiento.js"></script>
+    
+    
+    
     <title>Establecimientos</title>
+    
 </head>
 <body>
     <header>
@@ -55,37 +62,87 @@
       </div>
     </header>
 <main>
-    <h1>Nombre del establecimiento</h1>
-    <section>
-        <article class="contenedor-establecimiento1">
-            <img src="img/1525771017_163324_1525801273_rrss_normal.jpg" alt="establecimiento">
-            <p class="textoimagen1">Direccion <br>Provincia <Br>Telefono <Br>Idiomas <Br>Modalidad</Br></p>
-        </article>
-    </section>
+  
+  <h1>Nombre del establecimiento</h1>
     
-    <h2>Próximos cursos</h2>
+    <section id="fotogrande">
+    <article id="provinciagrande">
+      <img src="img/1525771017_163324_1525801273_rrss_normal.jpg" alt="escuela1">
+        <p>Modalidad</p>
+        <p>Dias y horarios</p>
+        <p>Fecha de inicio</p>
+        <p>Establecimiento 1</p>
+        <p>Precio</p>
+        <p>Idioma 1</p>
+        </article>
+        </section>
+        <article id="h22">
+        <h2>Proximos cursos</h2>
+      </article>
+       
+      <select  name="establecimientoboton" id="establecimientoboton">
+        <option value="provincia1">provincia 1</option>
+        <option value="provincia2">provincia 2</option>
+    </select>
+    <button id="filtrarprovincia">filtrar provincia</button>
+                
+     
+      <section id="escuelas" >
+        <article class="provincia1">
+          <p>provincia 1</p>
+          <p>Modalidad</p>
+          <p>Dias y horarios</p>
+          <p>Fecha de inicio</p>
+          <p>Establecimiento 1</p>
+          <p>Precio</p>
+          <img src="img/ingles lvl 0.png" alt="ingles2">
+          <a href="inscripcion.html" class="inscribirse-calendario">
+              <br>
+          <button>Inscribirse</button></a></Br></p>
+      </article>
 
-    <section>
-      <article class="contenedor-establecimiento2">
-          <img src="img/ingles lvl 0.png" alt="inglesnivel1">
-          <p class="textoimagen2"><Br>Modalidad</Br><Br>Dias y horarios</Br><Br>Fecha de inicio</Br><Br>Precio <BR>
-          <a href="inscripcion.html" class="inscribirse-calendario"><button>Inscribirse</button></a></Br></p>
-          <img src="img/ingles nivle 1.png" alt="ingles2">
-          <p class="textoimagen2"><Br>Modalidad</Br><Br>Dias y horarios</Br><Br>Fecha de inicio</Br><Br>Precio <BR>
-            <a href="inscripcion.html" class="inscribirse-calendario"><button>Inscribirse</button></a></Br></p>
-          </article>
-  </section>
+<article class="provincia1">
+          <p>provincia 1</p>
+          <p>Modalidad</p>
+          <p>Dias y horarios</p>
+          <p>Fecha de inicio</p>
+          <p>Establecimiento 1</p>
+          <p>Precio</p>
+          <img src="img/ingles lvl 0.png" alt="ingles2">
+          <a href="inscripcion.html" class="inscribirse-calendario">
+              <br>
+          <button>Inscribirse</button></a></Br></p>
+      </article>
 
-    <section>
-      <article class="contenedor-establecimiento2">
-          <img src="img/ingles lvl 0.png" alt="inglesnivel1">
-          <p class="textoimagen2"><Br>Modalidad</Br><Br>Dias y horarios</Br><Br>Fecha de inicio</Br><Br>Precio <BR>
-          <a href="inscripcion.html" class="inscribirse-calendario"><button>Inscribirse</button></a></Br></p>
-          <img src="img/ingles nivle 1.png" alt="ingles2">
-          <p class="textoimagen2"><Br>Modalidad</Br><Br>Dias y horarios</Br><Br>Fecha de inicio</Br><Br>Precio <BR>
-            <a href="inscripcion.html" class="inscribirse-calendario"><button>Inscribirse</button></a></Br></p>
-          </article>
-  </section>
+      <article class="provincia2">
+        <p>provincia 2</p>
+        <p>Modalidad</p>
+        <p>Dias y horarios</p>
+        <p>Fecha de inicio</p>
+        <p>Establecimiento 1</p>
+        <p>Precio</p>
+        <img src="img/ingles lvl 0.png" alt="ingles2">
+        <a href="inscripcion.html" class="inscribirse-calendario">
+            <br>
+        <button>Inscribirse</button></a></Br></p>
+    </article>
+
+    <article class="provincia2">
+      <p>provincia 2</p>
+      <p>Modalidad</p>
+      <p>Dias y horarios</p>
+      <p>Fecha de inicio</p>
+      <p>Establecimiento 1</p>
+      <p>Precio</p>
+      <img src="img/ingles lvl 0.png" alt="ingles2">
+      <a href="inscripcion.html" class="inscribirse-calendario">
+          <br>
+      <button>Inscribirse</button></a></Br></p>
+  </article>
+
+</section>
+
+   
 </main>
 <footer>
       <div>
@@ -119,4 +176,5 @@
       </div>
     </footer>
 <body>
+  
 </html>
