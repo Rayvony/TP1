@@ -544,3 +544,76 @@ footer {
  width: 16.66666666%;
  float: left;
 }
+
+
+/* css de calendario-con-filtrar */
+#cursos img{
+  max-width: 30%;
+  padding: 1em;
+  border-radius: 2em;
+          
+}
+#cursos{
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+   
+}
+#cursos article{
+  width: calc(50%);
+  padding: 3em;
+  border: 1px solid #21cdf8;
+}
+/*nombre de establecimiento */
+
+
+#h22{
+  margin-top: 10em;
+  margin: 5em;
+}
+
+#establecimientoboton{
+  margin-left: 20em;
+}
+
+#fotogrande p{
+  
+  font-size: 3em;
+}
+
+#provinciagrande img{
+margin: 1em;
+margin-left: 20em;
+justify-content: center;
+align-items: center;
+  float: left;
+
+}
+
+#escuelas{
+  display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+  
+}
+.provincia1{
+  width: calc(50%);
+  padding: 5em;
+ 
+}
+.provincia2{
+  width: calc(50%);
+  padding: 5em;
+  
+}
+.provincia1 img{
+ max-width: 20%;
+ padding-bottom: 2em;
+ 
+}
+
+.provincia2 img{
+   
+ max-width: 20%;
+}
+
