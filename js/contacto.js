@@ -1,0 +1,70 @@
+const nombre = document.getElementById('nombre')
+const apellido = document.getElementById('apellido')
+const mensaje = document.getElementById('mensaje')
+const form = document.getElementById('form')
+const errorElement = document.getElementById('error')
+const btnmodal = document.getElementById('btnmodal')
+const btnenviar = document.getElementById('btnenviar')
+const modal_container = document.getElementById('modal_container')
+const email = document.getElementById('email')
+const regex = /^([a-z\d\.-]+)@([a-z\d\.-]+)\.([a-z]{2,4})(\.[a-z]{2,4})?$/i
+
+email.addEventListener('keyup', (e) => {
+    validar()
+})
+
+form.addEventListener('submit', (e) => {
+        let messages = []
+        if (nombre.value === '' || nombre.value == null) {
+            messages.push('Se requiere un nombre')
+            nombre.classList.add('error')
+        }else{nombre.classList.remove('error')}
+
+        if (apellido.value === '' || apellido.value == null) {
+            messages.push('Se requiere un apellido')
+            apellido.classList.add('error')    
+        }else{apellido.classList.remove('error')}
+
+        if (email.value === '' || email.value == null) {
+            email.classList.add('error')
+        }
+        
+        if(email.classList.contains('error')){
+            messages.push('Ingrese un email valido')
+        }
+        if (mensaje.value.length >= 1000) {
+            messages.push('Limitar el mensaje a menos de 1000 caracteres')
+            mensaje.classList.add('error')
+        }else{mensaje.classList.remove('error')}
+        
+        if (mensaje.value.length == 0) {
+            messages.push('Se requiere un mensaje')
+            mensaje.classList.add('error')
+        }else{mensaje.classList.remove('error')}
+
+        if (messages.length > 0 || test == 0) {
+            e.preventDefault()
+            errorElement.innerText = messages.join(', ')   
+        }
+    })
+
+
+
+function countChars(obj){
+    var maxLength = 1000;
+    var strLength = obj.value.length;
+    var charRemain = (maxLength - strLength);
+    
+    if(charRemain < 0){
+        document.getElementById("charNum").innerHTML = '<span style="color: red;">Superaste el limite de '+maxLength+' caracteres</span>';
+    }else{
+        document.getElementById("charNum").innerHTML = charRemain+' Caracteres restantes';
+    }
+}
+
+function validar (){
+    if(regex.test(email.value)){
+        email.classList.remove('error')
+    }else {
+        email.classList.add('error')}
+}
