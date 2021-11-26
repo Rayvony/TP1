@@ -3,18 +3,16 @@ const apellido = document.getElementById('apellido')
 const mensaje = document.getElementById('mensaje')
 const form = document.getElementById('form')
 const errorElement = document.getElementById('error')
-const btnmodal = document.getElementById('btnmodal')
-const btnenviar = document.getElementById('btnenviar')
-const modal_container = document.getElementById('modal_container')
+
 const email = document.getElementById('email')
 const regex = /^([a-z\d\.-]+)@([a-z\d\.-]+)\.([a-z]{2,4})(\.[a-z]{2,4})?$/i
-
+var messages = []
 email.addEventListener('keyup', (e) => {
     validar()
 })
 
 form.addEventListener('submit', (e) => {
-        let messages = []
+        messages = []
         if (nombre.value === '' || nombre.value == null) {
             messages.push('Se requiere un nombre')
             nombre.classList.add('error')
@@ -42,14 +40,17 @@ form.addEventListener('submit', (e) => {
             mensaje.classList.add('error')
         }else{mensaje.classList.remove('error')}
 
-        if (messages.length > 0 || test == 0) {
+        if (messages.length > 0) {
             e.preventDefault()
             errorElement.innerText = messages.join(', ')   
         }
     })
 
-
-
+form.addEventListener('submit', (e) => {
+    if (messages.length == 0) {
+        alert("Envio Exitoso")
+    }
+})
 function countChars(obj){
     var maxLength = 1000;
     var strLength = obj.value.length;
