@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css" />
+	<script defer src="js/contacto.js"> </script>
  </head>
   <body>
     <header>
@@ -58,28 +59,33 @@
       <section class="contacto">
         <h1 class="tit_contacto">Contacto</h1>
         <div class="col-6">
+        <form id="form" action="" method="post">
           <div class="inputs_contacto">
-            <input type="text" size="30" placeholder="Nombre" class="input_form" />
+            <input type="text"  name="nombre" id="nombre" size="30" placeholder="Nombre" class="input_form"/>
           </div>
           <div class="inputs_contacto">
-            <input type="text" size="30" placeholder="Apellido" class="input_form" />
+            <input type="text" name="apellido" id="apellido" size="30" placeholder="Apellido" class="input_form"/>
           </div>
           <div class="inputs_contacto">
-            <input type="text" size="30" placeholder="E-mail" class="input_form" />
+            <input type="text" name="email" id="email" size="30" placeholder="E-mail" class="input_form" />
           </div>
           <div class="inputs_contacto">
-			<textarea name="" id="" cols="30" rows="10" placeholder="Mensaje" class="text_area"></textarea>
+			<textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Mensaje" class="text_area" onkeyup="countChars(this);"></textarea>
+      <p id="charNum">1000 caracteres restantes</p>
           </div>
-          <button class="enviar_contacto">Enviar</button>
+          <div id="error"></div>
+          <button id="btnenviar" type="submit" class="enviar_contacto">Enviar</button>
         </div>
         <div class="col-6">
           <textarea name="" id="" cols="30" rows="10" placeholder="Comentarios Adicionales" class="datos_contacto"></textarea>
         </div>
+	     </form>
       </section>
       <section class="ubicacion">
-        <h2>Ubicación</h2>
+        <h2 id="ubicacion">Ubicación</h2>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.373852134705!2d-58.56505388476859!3d-34.67051288044223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc62cc3ef7083%3A0x8867107f425fade5!2sUniversidad%20Nacional%20de%20La%20Matanza!5e0!3m2!1ses!2sar!4v1622056285982!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       </section>
+      </div>
     </main>
 <footer>
       <div>
