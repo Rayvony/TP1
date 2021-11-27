@@ -133,41 +133,64 @@ input[type=text]:hover,input[type=list]:hover{
 }
 /*Contacto*/
 .tit_contacto{
- text-align: left;
- margin-left: 9.4%;;
- padding-top: 1em;
-}
-.inputs_contacto{
- margin-top: 1em;
-}
-.text_area{
- height: 8vh;
- margin-left: 10em;
- width: 50%;
-	margin-left: 20%;
- padding-left: 3px;
- padding: 1px 0px 0px 3px;
-}
-.input_form{
- height: 3em;
- border-radius: 3px;
- margin-left: 20%;
- padding: 1px 0px 0px 3px;
-}
-.enviar_contacto{
- float: right;
- width: 100px;
- margin-right: 11em
-}
-.datos_contacto{
- height: 35vh;
- width: 70%;
- padding: 1px 0px 0px 3px;
-}
-iframe{
- height: 300px;
- width: 100%;
-}
+  text-align: left;
+  margin-left: 9.4%;;
+  padding-top: 1em;
+ }
+ .inputs_contacto{
+  margin-top: 1em;
+ }
+ #error{
+   color:#ff0000;
+   border-color:  #ff0000;
+   margin-left: 20%;
+  }
+ .text_area{
+  height: 8vh;
+  margin-left: 10em;
+  width: 50%;
+  margin-left: 20%;
+  padding-left: 3px;
+  padding: 1px 0px 0px 3px;
+ }
+ .input_form{
+  height: 3em;
+  border-radius: 3px;
+  margin-left: 20%;
+  padding: 1px 0px 0px 3px;
+ }
+ .enviar_contacto{
+  float: right;
+  width: 100px;
+  margin-right: 9em;
+ }
+ .datos_contacto{
+  height: 28.3vh;
+  width: 88%;
+  padding: 1px 0px 0px 3px;
+ }
+ iframe{
+  margin-left: 50%;
+  height: 300px;
+  width: 44%;
+  border-radius: 3px;
+ }
+ #ubicacion{
+  margin-left: 30%;
+ }
+
+ #charNum{ 
+   margin-left: 20%;
+ }
+ .error{ 
+   background-color: rgb(255, 88, 88);
+   color:white;
+  }
+ 
+ .show{ 
+  pointer-events: auto; 
+  opacity: 1;
+ }
 /*Calendario*/
 .contenedor-calendario{
  display: flex;
@@ -551,7 +574,6 @@ footer {
   max-width: 30%;
   padding: 1em;
   border-radius: 2em;
-          
 }
 #cursos{
   display: flex;
@@ -562,8 +584,9 @@ footer {
 #cursos article{
   width: calc(50%);
   padding: 3em;
-  border: 1px solid #21cdf8;
+  border: none;
 }
+#filtrar{width: 5em;}
 /*nombre de establecimiento */
 
 
