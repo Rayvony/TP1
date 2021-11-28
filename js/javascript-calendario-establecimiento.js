@@ -16,7 +16,6 @@ function filtrar() {
 /* FILTRAR NOMBRE ESTABLECIMIENTO */
 
 $(document).ready(function() {
-    $("#escuelas").hide();
     $("#filtrarprovincia").click(function() {
         filtrarprov();
         
@@ -24,8 +23,8 @@ $(document).ready(function() {
 })
 function filtrarprov() {
    
-    const valorestablecimiento=$("#establecimientoboton").val(); 
-   $(`#escuelas .${valorestablecimiento}`).show();  
-   $(`#escuelas `).show();
+    const valorestablecimiento=$("#establecimientoboton").val();
+    $("#escuelas article").hide();
+    $(`#escuelas .${valorestablecimiento}`).show();
 
 }
