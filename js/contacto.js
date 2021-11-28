@@ -3,10 +3,12 @@ const apellido = document.getElementById('apellido')
 const mensaje = document.getElementById('mensaje')
 const form = document.getElementById('form')
 const errorElement = document.getElementById('error')
-
+const menu = document.getElementById('menu')
+const hide = document.getElementById('vecke')
 const email = document.getElementById('email')
 const regex = /^([a-z\d\.-]+)@([a-z\d\.-]+)\.([a-z]{2,4})(\.[a-z]{2,4})?$/i
 var messages = []
+
 email.addEventListener('keyup', (e) => {
     validar()
 })
@@ -101,3 +103,15 @@ function filtrarprov() {
    $(`#escuelas `).show();
 
 }
+
+//menu click
+menu.addEventListener('click'), function(){
+    if(hide.classList.contains('menu-hide')){
+        hide.classList.remove('menu-hide')
+    }else{
+        hide.classList.add('menu-hide')
+    }
+}
+
+
+  
