@@ -639,4 +639,37 @@ align-items: center;
    
  max-width: 20%;
 }
+.menu-hide{
+  display: none;
+}
+@media (max-width: 1023px){
 
+}
+
+@media (max-width: 723px){
+  .contenedor-form{
+    display: grid;
+    columns: 100%;
+  }
+  .formulario-index{
+    width: 100%;
+  }
+  .inscripcion{
+    display: grid;
+    width: 100%;
+    columns: 100%;
+    grid-row-gap: 1.8em
+  }
+  .contenedor-fotos{
+    display: none;
+  }
+  nav{
+    display: none;
+  }
+  .contenedor-mapas{
+    display: grid;
+    width: 100%;
+    columns: 100%;
+    grid-row-gap: 0.8em;
+  }
+}
